@@ -1,3 +1,4 @@
 [submodule "src/grpc/protos"]
 	path = src/grpc/protos
 	url = https://github.com/kstash/work-better-protos.git
+	branch = main
