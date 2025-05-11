@@ -34,7 +34,7 @@ export class OAuthGoogleService implements OnModuleInit {
     // 1. 구글 프로필 정보 가져오기
     const user = req.user as OAuthPayload;
 
-    // 2. user-service 에 사용자 존재 확인 요청 (gRPC 또는 REST)
+    // 2. user 서비스에 이메일로 사용자 존재 확인 요청 (gRPC 또는 REST)
     const { exists } = await firstValueFrom(
       this.userService.checkUserExists({
         email: user.email,
